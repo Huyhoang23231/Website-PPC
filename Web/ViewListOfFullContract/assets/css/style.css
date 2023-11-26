@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#main {
+}
+
+/* Header */
+#header {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-color: #2f3a8c;
+}
+
+.header__navbar {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navbar--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__navbar--logo {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header__navbar--image {
+}
+
+.header__navbar--list {
+  margin-top: 40px;
+  width: 240px;
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.header__navbar--item {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 8px;
+}
+
+.header__navbar--item:hover {
+  background-color: #d9d9d9;
+}
+
+.header__navbar--item--content {
+  width: 70%;
+  display: flex;
+}
+
+.header__navbar--item a {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: black;
+}
+
+.header__navbar--icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header__navbar--copyright {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.7;
+  margin: 20px;
+}
+
+.header__navbar--copyright img {
+  width: 20px;
+  height: 25px;
+}
+
+/* Body */
+#body {
+  width: 100%;
+  height: auto;
+}
+
+.body__title {
+  font-size: 12px;
+  color: #2f3a8c;
+  margin-left: 700px;
+  padding-top: 30px;
+}
+
+.body__subtitle {
+  font-size: 12px;
+  margin-left: 340px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.body__search {
+  margin-left: 340px;
+  padding-top: 20px;
+  display: flex;
+  position: relative;
+}
+
+#user-property {
+  width: 300px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #e2e6ee;
+  border: 1px solid #e2e6ee;
+  padding: 0 60px 0px 8px;
+  transition: 0.25s ease;
+  margin-left: 20px;
+  font-size: 16px;
+  min-width: 250px;
+  overflow-x: hidden;
+}
+
+#user-property:focus {
+  border-color: #2f3a8c;
+  transform: 0.2s linear;
+}
+
+.body__search--label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.body__search--input {
+  position: relative;
+}
+
+.body__search--input--icon {
+  position: absolute;
+  right: 0;
+  padding: 12px 0 0 0;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border-left: 1px solid #2f3a8c;
+  text-align: center;
+  z-index: 1;
+}
+
+.body__search--input--icon:hover {
+  background-color: #2f3a8c;
+  opacity: 0.9;
+  cursor: pointer;
+  color: #fff;
+}
+
+.body__add {
+  margin: 40px 0 0 340px;
+  width: 140px;
+  height: 40px;
+  background-color: #2f3a8c;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__add:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Tạo bảng hiển thị dữ liệu */
+.table__container {
+  margin: 40px 0 0 340px;
+  max-height: 385px;
+  overflow-y: auto;
+}
+
+table {
+  width: 1100px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #d9d9d9;
+}
+
+.table__container .table__hover tbody tr:hover {
+  background: #d9d9d9;
+  cursor: pointer;
+}
+
+thead,
+th {
+  position: sticky;
+  top: 0px;
+  background-color: #2f3a8c;
+  color: #fff;
+}
+
+.text__opacity {
+  opacity: 0.8;
+}
+
+thead,
+th,
+td {
+  padding: 20px 12px;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 14px 0.8;
+}
+
+thead .checkbox {
+  display: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  transition: 0.2s ease;
+}
+
+tbody,
+tr,
+td {
+  overflow-y: hidden;
+}
+
+tbody,
+tr,
+.checkbox {
+  margin-left: 20px;
+}
+
+.table__adjust--icon,
+.table__print--icon {
+  display: flex;
+  padding-left: 24px;
+  font-size: 20px; /* hoặc màu sắc mong muốn */
+}
+
+.table__adjust--icon,
+.table__print--icon {
+  width: 45px;
+  height: 40px;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 14px;
+  color: black;
+  padding-right: 22px;
+}
+
+.table__adjust--icon:hover,
+.table__print--icon:hover {
+  width: 45px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 14px;
+  color: #fff;
+  padding-right: 22px;
+  transition: 0.3s ease-in-out;
+}

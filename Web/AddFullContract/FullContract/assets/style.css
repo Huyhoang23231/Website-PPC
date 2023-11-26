@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#main {
+}
+
+/* Header */
+#header {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-color: #2f3a8c;
+}
+
+.header__navbar {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navbar--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__navbar--logo {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header__navbar--image {
+}
+
+.header__navbar--list {
+  margin-top: 40px;
+  width: 240px;
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.header__navbar--item {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 8px;
+}
+
+.header__navbar--item:hover {
+  background-color: #d9d9d9;
+}
+
+.header__navbar--item--content {
+  width: 70%;
+  display: flex;
+}
+
+.header__navbar--item a {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: black;
+}
+
+.header__navbar--icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header__navbar--copyright {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.7;
+  margin: 20px;
+}
+
+.header__navbar--copyright img {
+  width: 20px;
+  height: 25px;
+}
+
+/* Body */
+#body {
+  width: 100%;
+  height: auto;
+}
+
+/* tieu de */
+.content-text {
+  color: #2f3a8c;
+  margin-left: 700px;
+  padding-top: 30px;
+}
+
+.content-span {
+  font-size: 20px;
+  margin-left: 340px;
+  font-weight: 600;
+}
+
+#yourForm {
+}
+
+.content__wrapper {
+  margin: 20px 0 0 340px;
+}
+
+/* lable các thuoc tinh còn lại */
+.label-content {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  width: 150px;
+  text-align: left;
+  margin-right: 25px;
+  justify-content: space-between;
+}
+/* màu sắc kiểu chừ PPt */
+.label-span {
+  color: #555;
+}
+
+.input {
+  flex-grow: 1;
+  height: 50%;
+  width: 150%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.input-one {
+  height: 50%;
+  width: 213%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fix__width {
+  height: 50%;
+  width: 197%;
+}
+
+.input-span {
+  display: flex;
+  margin-left: 120px;
+  font-weight: bold;
+}
+/* nut huy va luu */
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 65px;
+}
+
+.button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 4px;
+}
+.button:hover {
+  color: #555;
+  cursor: pointer;
+}
+.one {
+  background-color: #2f3a8c;
+  color: #fff;
+}
